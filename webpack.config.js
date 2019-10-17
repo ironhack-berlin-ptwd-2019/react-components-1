@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -23,12 +23,12 @@ module.exports = {
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname,'public'),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist",
+    contentBase: path.join(__dirname, 'public'),
+    port: 3001,
+    publicPath: "http://localhost:3001/dist",
     hot: true
   },
-  plugins: [ new webpack.HotModuleReplacementPlugin() ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   mode: "development",
   performance: {
     hints: false
